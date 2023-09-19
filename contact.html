@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Neil Bernard Supillo">
+  <meta name="description" content=" TakoyaKings Contact">
+  <title>TakoyaKings Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <header class="header">
+   <h1 class="header_title">TakoYakings</h1>
+   <nav class="header_nav">
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="hours.html">Hours</a></li>
+       <li><a href="contact.html">Contact</a></li>
+     </ul>
+   </nav>
+ </header>
+
+<section class="section">
+  
+  <figure class="section_fig">
+    <img src="tako3.jpeg" alt="takoyaki" height="300px" width="300px">
+    <figcaption class="remove">Takoyaki</figcaption>
+  </figure>
+</section>
+
+<article class="location">
+  <h2 class="location__title">Our Location</h2>
+  <address class="location__add">
+    Concepcion No.1 <br> Sariaya <br> Quezon <br>Email: <a  href="mailto:takoyakings@gmail.com"> takoyakings@gmail.com</a>
+  </address>
+</article>
+<hr>
+<article class="contact">
+  <h2 class="contact_header">Contact Us</h2>
+  <form class="form">
+    <fieldset class="form_con">
+      <legend class="remove">Send Us A Message</legend>
+      <p class="name">
+        <label class="name_label" for="name">Name:</label>
+        <input class="name_input" id="name" name="name" type="name" placeholder="Your Name" required>
+      </p>
+      
+      <p class="email">
+        <label for="email" class="email_label" >Email:</label>
+        <input type="email" name="email" id="email" class="email_input"  placeholder="Your Email" required>
+      </p>
+      
+      <p class="message">
+        <label for="message" class="message_label" >Your Message:</label>
+       
+        <textarea id="message" class="message__textarea" required rows="10" cols="30" placeholder="Your Message Here:"></textarea>
+      </p>
+    </fieldset>
+    <button type="reset" class="reset">Reset</button>
+    <button type="submit" class="submit">Submit</button>
+  </form>
+</article>
+<footer class="footer">
+  <p class="copyr">
+    <span class="footer__copyright" id="year">Copyright &copy; <time id="year"></time></span><span class="footer__tako">Takoyakings</span>
+  
+  </p>
+  
+</footer>
+</body>
+</html>
