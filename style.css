@@ -1,219 +1,224 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: burlywood ;
+body {
+  background-color: burlywood;
   max-width: 900px;
   border-left: 4px solid;
   border-right: 4px solid;
   margin: auto;
-  
 }
-html{
+html {
   background-color: sandybrown;
 }
-  
 
 /*main*/
 
-.header_title{
+.header_title {
   background-color: black;
   font-size: clamp(1rem, 2rem, 3rem);
   color: white;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
   letter-spacing: 2.5px;
 }
-.copyr{
-  padding: .4rem;
+.copyr {
+  padding: 0.4rem;
   text-align: center;
   background-color: black;
-  margin: .7rem 0;
+  margin: 0.7rem 0;
   color: white;
 }
-.header_nav ul{
- 
+.header_nav ul {
   background-color: bisque;
-  padding: .2rem;
+  padding: 0.2rem;
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
-.header_nav a{
-  color:  black;
-  
+.header_nav a {
+  color: black;
 }
-.section_title{
-  padding: .5rem;
+.section_title {
+  padding: 0.5rem;
   font-size: clamp(1rem, 2.2vh, 2rem);
   color: brown;
   font-weight: 700;
-  background-color: bisque ;
+  background-color: bisque;
   position: absolute;
   z-index: 1;
   left: 10px;
   top: -1000px;
-  padding: .5rem;
+  padding: 0.5rem;
   transform-origin: top center;
-  animation: welcome .5s 1s forwards;
+  animation: welcome 0.5s 1s forwards;
 }
 @keyframes welcome {
-  0%{
+  0% {
     top: 10px;
-  transform: scaleY(0) ;
+    transform: scaleY(0);
   }
 
-  
-  100%{
+  100% {
     top: 10px;
-  transform: scaleY(1);
-}
+    transform: scaleY(1);
+  }
 }
 
-.section{
+.section {
   position: relative;
 }
 
-.section_fig img{
+.section_fig img {
   width: 100%;
   height: 100%;
 }
 
-.remove{
+.remove {
   position: absolute;
   left: -1000px;
 }
 
-thead, tbody, tfoot,tr{
+thead,
+tbody,
+tfoot,
+tr {
   display: contents;
 }
-.menu_table{
+.menu_table {
   display: grid;
-  gap: .2rem;
+  gap: 0.2rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-  "cp cp cp"
-  "hd hd hd"
-  "hm qt pr"
-  "hm qt pr"
-  "hm qt pr"
-  "sp qt pr"
-  "sp qt pr"
-  "sp qt pr"
-  "bf qt pr"
-  "bf qt pr"
-  "bf qt pr"
-  "dr dr dr"
-  "kw kw kw";
+    "cp cp cp"
+    "hd hd hd"
+    "hm qt pr"
+    "hm qt pr"
+    "hm qt pr"
+    "sp qt pr"
+    "sp qt pr"
+    "sp qt pr"
+    "bf qt pr"
+    "bf qt pr"
+    "bf qt pr"
+    "dr dr dr"
+    "kw kw kw";
 }
-.menu_caption{
+.menu_caption {
   grid-area: cp;
 }
-.menu_hc{
+.menu_hc {
   grid-area: hm;
 }
-.menu_header{
+.menu_header {
   grid-area: hd;
 }
-.menu_shrimp{
+.menu_shrimp {
   grid-area: sp;
 }
-.menu_beef{
+.menu_beef {
   grid-area: bf;
 }
-.menu_drink{
+.menu_drink {
   grid-area: dr;
 }
-.menu_kiwi{
+.menu_kiwi {
   grid-area: kw;
 }
-.menu_table{
+.menu_table {
   text-align: center;
 }
-td, th, caption{
+td,
+th,
+caption {
   border: 1px solid;
-  padding: .4rem;
+  padding: 0.4rem;
 }
-.menu_table{
-  margin: .3rem;
+.menu_table {
+  margin: 0.3rem;
 }
-.menu_title{
+.menu_title {
   text-align: center;
-  padding: .4rem;
+  padding: 0.4rem;
   color: brown;
 }
-hr{
+hr {
   color: black;
   margin: 1rem;
 }
 .menu_hc,
 .menu_shrimp,
-.menu_beef{
+.menu_beef {
   display: grid;
   place-content: center;
 }
 
-.backtotop{
+.backtotop {
   margin-top: 3rem;
 }
 
-
-th{
+th {
   color: brown;
   border-color: black;
 }
 /* -----about------*/
-.about_header{
+.about_header {
   color: brown;
-  padding: .4rem;
+  padding: 0.4rem;
 }
-.about_details{
-  margin: 0 .5rem
-  
+.about_details {
+  margin: 0 0.5rem;
 }
-.trivia_header{
+.trivia_header {
   color: brown;
-  margin: .7rem;
+  margin: 0.7rem;
 }
-.trivia_answer{
-  margin: .7rem .5rem;
+.trivia_answer {
+  margin: 0.7rem 0.5rem;
 }
-.trivia_question{
-  margin: .7rem .5rem;
+.trivia_question {
+  margin: 0.7rem 0.5rem;
 }
 
 /* Contact*/
-.form_con{
-  border:none;
-  
+.form_con {
+  border: none;
 }
-.form label{
+.form label {
   display: block;
 }
-.contact_header{
+.contact_header {
   color: brown;
   margin: 1rem;
 }
-.form input{
+.form input {
   width: 70%;
-  
 }
-.form{
+.form {
   margin: 1rem;
 }
-.location__title{
+.location__title {
   color: brown;
 }
-.location{
+.location {
   margin: 1rem;
 }
-.email{
- margin: .5rem 0;
+.email {
+  margin: 0.5rem 0;
 }
 
 /* Hours */
-.hours_con{
+.hours_con {
   margin: 1rem;
+}
+
+th,
+td,
+caption {
+  background-color: bisque;
+}
+caption {
+  font-size: 1.4rem;
 }
