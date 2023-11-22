@@ -44,7 +44,7 @@ html {
 .section_title {
   padding: 0.5rem;
   font-size: clamp(1rem, 2.2vh, 2rem);
-  color: brown;
+  color: rgb(20, 19, 19);
   font-weight: 700;
   background-color: bisque;
   position: absolute;
@@ -160,7 +160,7 @@ hr {
 }
 
 th {
-  color: brown;
+  color: rgb(0, 0, 0);
   border-color: black;
 }
 /* -----about------*/
